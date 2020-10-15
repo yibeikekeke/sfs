@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.b{
+				position: relative;
+				left: 6%;
+			}
+			.divv{
+				width: 88%;
+				
+				background-color: #17A2B8;
+				border-radius: 100px;
+				margin-bottom: 50px;
+				color: white;
+				text-align: center;
+				font-weight: 900;
+			}
+			.divv:hover{
+				background-color: #138496;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="b">
+		<div class="divv" onclick="inb()">
+			出校
+		</div>
+		<div class="divv" onclick="outb()">
+			进校
+		</div>
+		</div>
+	</body>
+	<script>
+		a=window.innerHeight;
+		
+		aa=document.getElementsByClassName("divv")[0];
+		bb=document.getElementsByClassName("divv")[1];
+		aa.style.height=a/2.5+"px";
+		bb.style.height=a/2.5+"px";
+		aa.style.fontSize=a/4.6+"px";
+		bb.style.fontSize=a/4.6+"px";
+		function inb(){
+			window.location.href="DIY.html"
+		}
+		function outb(){
+			window.location.href="back.html"
+		}
+		
+	</script>
+</html>
